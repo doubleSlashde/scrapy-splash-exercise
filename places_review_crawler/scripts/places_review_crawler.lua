@@ -1,7 +1,8 @@
 function main(splash)
-
-    local LINK_MORE_REVIEWS = '.section-rating-term-list'
-    local LINK_EXPAND_REVIEW = '.section-expand-review.blue-link'
+    
+    --- TODO: find corresponding css selectors!
+    local LINK_MORE_REVIEWS = ''
+    local LINK_EXPAND_REVIEW = ''
 
     --- go to place page
     splash:go(splash.args.url)
