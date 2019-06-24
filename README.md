@@ -22,7 +22,14 @@ Additionally, make sure that Scrapy-Splash is installed:
 Then run the Docker container on port 8050
     
     $ docker run -it -p 8050:8050 scrapinghub/splash
+    
+Clone the project and change to the project directory
+
+    $ git clone https://github.com/doubleSlashde/scrapy-splash-exercise.git
+    $ cd scrapy-splash-exercise
+    
 
 For running the spider, enter the following command in your CLI:
     
     $ scrapy crawl places_review_spider -o reviews.json
+
