@@ -5,7 +5,9 @@ This project is only meant for educational purposes.
 
 ## Running the spider
 
-A running Python and Scrapy installation is mandatory for this project. Additionally, a running Splash container has to be started via Docker before running the example. 
+A running Python and Scrapy installation is mandatory for this project. Additionally, a running Splash container has to be started via Docker before running the example. Therefore, a valid Docker installation is required for running the exercise.
+
+In case there is no Docker installation running on your machine, get it ([here](https://docs.docker.com/docker-for-windows/install)).  
 
 First, pull the Docker image
 
