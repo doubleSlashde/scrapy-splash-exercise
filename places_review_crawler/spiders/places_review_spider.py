@@ -38,10 +38,9 @@ class PlacesDetailSpider(scrapy.Spider):
         review_items = response.css('.section-review-content')
         for review_item in review_items:
             yield Review({
-                # TODO: Find corresponding CSS selectors for user_name, review_text and review_date
                 'place_id': response.url.split("place_id:")[1],
-                'user_name': review_item.css('::text').extract(),
+                'user_name': review_item.css('.section-review-title span::text').extract(),
                 'user_profile': review_item.css(".section-review-titles-with-menu").xpath('a//@href').extract(),
-                'review_text': review_item.css("::text").extract(),
-                'review_date': review_item.css("::text").extract()
+                'review_text': review_item.css(".section-review-text::text").extract(),
+                'review_date': review_item.css(".section-review-publish-date::text").extract()
             })
