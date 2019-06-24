@@ -1,4 +1,4 @@
-# Dynmaic website scraping excercise with Scrapy-Splash
+# Dynamic website scraping excercise with Scrapy-Splash
 
 This is a Scrapy-Splash project to scrape reviews from Google Maps for some restaurants near our office in Friedrichshafen. 
 This project is only meant for educational purposes.
